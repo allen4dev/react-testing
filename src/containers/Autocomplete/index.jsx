@@ -9,6 +9,7 @@ import Form from './../../shared/Form';
 import './index.css';
 
 import tracks from './../../modules/tracks';
+import playlists from './../../modules/playlists';
 
 class Autocomplete extends Component {
   constructor(props) {
@@ -29,8 +30,10 @@ class Autocomplete extends Component {
     this.setState({ term });
   };
 
-  handleSubmit = e => {
+  handleSubmit = async e => {
     e.preventDefault();
+
+    await this.props.searchPlaylists(this.state.term);
 
     this.setState({ term: '' });
   };
@@ -74,4 +77,5 @@ function mapStateToProps(state) {
 
 export default connect(mapStateToProps, {
   searchTracks: tracks.actions.searchTracks,
+  searchPlaylists: playlists.actions.searchPlaylists,
 })(Autocomplete);
