@@ -20,6 +20,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "enzyme": "^3.1.0"
+    "enzyme": "^3.1.0",
+    "uuid": "^3.1.0"
   }
 }
