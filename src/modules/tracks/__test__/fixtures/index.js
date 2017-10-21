@@ -4,15 +4,15 @@ const fixtures = {
   getTrack() {
     return {
       id: uuid(),
-      created_at: new Date().toString(),
+      // created_at: new Date().toString(),
       title: 'Track title',
-      artwork_url: `https://i1.sndcdn.com/artworks-${uuid()}.jpg`,
-      user: {
-        avatar_url: `https://i1.sndcdn.com/avatars-${uuid()}-large.jpg`,
-        id: uuid(),
-        uri: `https://api.soundcloud.com/users/${uuid()}`,
-        username: 'allen4dev',
-      },
+      // artwork_url: `https://i1.sndcdn.com/artworks-${uuid()}.jpg`,
+      // user: {
+      //   avatar_url: `https://i1.sndcdn.com/avatars-${uuid()}-large.jpg`,
+      //   id: uuid(),
+      //   uri: `https://api.soundcloud.com/users/${uuid()}`,
+      //   username: 'allen4dev',
+      // },
     };
   },
 
