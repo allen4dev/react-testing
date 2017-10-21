@@ -1,0 +1,11 @@
+.Form {
+  width: 100;
+}
+
+.Form-input {
+  border: 4px solid var(--blue);
+  border-radius: 10rem;
+  font-size: 1.2em;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}

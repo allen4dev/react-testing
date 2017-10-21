@@ -1,0 +1,39 @@
+.Track {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+.Track:hover {
+  background-color: var(--light-blue);
+}
+
+.Track:hover .Track-title {
+  color: var(--skyblue);
+}
+
+.Track-photo {
+  width: 60px;
+  height: 60px;
+}
+
+.Track-image {
+  width: 100%;
+}
+
+.Track-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  width: 80%;
+}
+
+.Track-title {
+  font-size: 1.2em;
+  /* font-weight: bold; */
+  margin-bottom: 0.2rem;
+}
+
+.Track-username {
+  color: gray;
+}
