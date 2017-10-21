@@ -16,7 +16,7 @@ export function setTracks(response) {
 // Async actions
 export function searchTracks(term) {
   return async dispatch => {
-    const tracks = await api.searchTracks(term);
+    const tracks = await api.tracks.searchTracks(term);
     const response = normalize(tracks, trackListSchema);
 
     dispatch(setTracks(response));
